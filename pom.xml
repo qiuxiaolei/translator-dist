@@ -3,7 +3,7 @@
 
     <groupId>org.agmip.translators</groupId>
     <artifactId>translator-dist</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -21,9 +21,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <agmip.core.version>1.0.2</agmip.core.version>
-        <ace.lookup.version>1.0.2</ace.lookup.version>
-        <agmip.common.functions.version>1.1</agmip.common.functions.version>
+        <agmip.core.version>1.1</agmip.core.version>
+        <ace.lookup.version>1.1</ace.lookup.version>
+        <agmip.common.functions.version>1.2</agmip.common.functions.version>
     </properties>
 
     <licenses>
@@ -54,14 +54,19 @@
                 <version>${ace.lookup.version}</version>
             </dependency>
             <dependency>
+              <groupId>org.agmip</groupId>
+              <artifactId>acmo</artifactId>
+              <version>1.0</version>
+            </dependency>
+            <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>12.0</version>
+                <version>14.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.0.7</version>
+                <version>1.0.9</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.velocity</groupId>
@@ -76,7 +81,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.10</version>
+                <version>4.11</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
@@ -86,7 +91,7 @@
         <connection>scm:git:git://github.com/agmip/translator-dist.git</connection>
         <developerConnection>scm:git:git@github.com:agmip/translator-dist.git</developerConnection>
         <url>http://github.com/agmip/translator-dist</url>
-        <tag>translator-dist-1.0.1</tag>
+        <tag>translator-dist-1.0.2</tag>
     </scm>
     <build>
         <plugins>
